@@ -1,1 +1,104 @@
-<p>facility works!</p>
+
+<body class="d-flex flex-column" >
+<app-header></app-header>
+<app-navigation></app-navigation>
+<div class="container-fluid">
+  <div class="row">
+    <table class="table table-dark" border="1">
+      <thead>
+      <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Area</th>
+        <th>Cost</th>
+        <th>Max People</th>
+        <th>Standard Room</th>
+        <th>Description Other Convenience</th>
+        <th>Pool Area</th>
+        <th>Floors</th>
+        <th>Facility Free</th>
+        <th>Rent Type</th>
+        <th>Facility Type</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+      </thead>
+      <tbody align="center">
+      <tr  >
+        <td></td>
+      <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="row">
+
+    <div class="col-md-4" style="text-align: center"  >
+      <div class="card" style="width: 35rem;">
+        <img src="../../../../assets/images/giuong_khach_san_1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: 30px;color: #046056"></h5>
+          <hr>
+          <ul>
+            <li style="color: red; ">STT: </li>
+            <hr>
+            <li>Name: </li>
+            <hr>
+            <li>Area: </li>
+            <hr>
+            <li>Cost: </li>
+            <hr>
+            <li>Max People:</li>
+            <hr>
+            <li>Standard Room:</li>
+
+            <li id="xemthemcard"><button >Xem thêm</button></li>
+
+            <div id="phanxemthem" style="display: none">
+              <hr>
+              <li>Description Other Convenience </li>
+              <hr>
+              <li>Pool Area:</li>
+              <hr>
+              <li>Floors:</li>
+              <hr>
+              <li>Facility Free:</li>
+              <hr>
+              <li>Rent Type: </li>
+              <hr>
+              <li>Facility Type:</li>
+            </div>
+
+            <li  style="display: none"><button >Thu gọn</button></li>
+            <!--            <div id="phanthugon{{item.id}}" style="display: block">-->
+            <!--            </div>-->
+          </ul>
+        </div>
+      </div>
+      <div class="card-body">
+        <button class="btn btn-dark"><a href="#" class="card-link">Update</a></button>
+
+        <button style="margin-left: 25px" class="btn btn-danger"><a href="#" class="card-link">Delete</a></button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<app-footer></app-footer>
+<body>

@@ -1,0 +1,106 @@
+<body class="d-flex flex-column">
+<app-header></app-header>
+<app-navigation></app-navigation>
+<section id="input-mask-wrapper">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong id="inDam"><h1 class="card-title" style="color: red">Edit Service</h1></strong>
+        </div>
+        <form >
+          <div class="card-body">
+            <div class="row col-md-12 col-xl-12 col-sm-12" >
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" for="basicSelect">Facility Type </label><br>
+                <select class="form-select" id="basicSelect" >
+                  <option>IT</option>
+                  <option>Blade Runner</option>
+                  <option>Thor Ragnarok</option>
+                </select>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" >Name Facility:</label>
+                <input type="text" class="form-control phone-number-mask" placeholder="Input Name"
+                       formControlName="name">
+
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" for="area">Area</label>
+                <input type="text" class="form-control date-mask" placeholder="1000 mét vuông" id="area"
+                       formControlName="area">
+              </div>
+
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" >Cost</label>
+                <input type="text" class="form-control time-mask" placeholder="?"
+                       formControlName="cost">
+
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" for="numeral-formatting">Max People</label>
+                <input type="text" class="form-control numeral-mask" placeholder="input number people" id="numeral-formatting"
+                       formControlName="maxPeople">
+
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" for="standardRoom">Standard Room</label>
+                <input type="text" class="form-control block-mask" placeholder="loại phòng" id="standardRoom"
+                       formControlName="standardRoom">
+
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" >Description Other Convenience</label>
+                <div class="input-group input-group-merge">
+
+                  <input type="text" class="form-control delimiter-mask"
+                         formControlName="descripttionOtherCovenience">
+                </div>
+
+
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" >poolArea</label>
+                <input type="text" class="form-control custom-delimiter-mask" placeholder="poolArea"
+                       formControlName="poolArea">
+
+
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" >numberFloors</label>
+                <div class="input-group input-group-merge">
+                  <input type="text" class="form-control prefix-mask"
+                         formControlName="floor">
+                </div>
+              </div>
+
+
+
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" for="facilityFree">facilityFree</label>
+                <input type="text" class="form-control prefix-mask" id="facilityFree" formControlName="faciltyFree">
+
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
+                <label class="form-label" for="rentType">Rent Type</label><br>
+                <select class="form-select" id="rentType">
+                  <option>IT</option>
+                  <option>Blade Runner</option>
+                  <option>Thor Ragnarok</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="col-12">
+              <button type="reset" class="btn btn-primary me-1 waves-effect waves-float waves-light">Submit</button>
+              <button type="reset" class="btn btn-outline-secondary waves-effect">Reset</button>
+            </div>                </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+

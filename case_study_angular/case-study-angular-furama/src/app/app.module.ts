@@ -11,6 +11,10 @@ import { EmployeeComponent } from './compoment/common/employee/employee.componen
 import { ContractComponent } from './compoment/common/contract/contract.component';
 import { FacilityComponent } from './compoment/common/facility/facility.component';
 import { NavigationComponent } from './compoment/common/navigation/navigation.component';
+import { AddCustomerComponent } from './compoment/common/customer/add-customer/add-customer.component';
+import { EditCustomerComponent } from './compoment/common/customer/edit-customer/edit-customer.component';
+import { AddFacilityComponent } from './compoment/common/facility/add-facility/add-facility.component';
+import { EditFacilityComponent } from './compoment/common/facility/edit-facility/edit-facility.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { NavigationComponent } from './compoment/common/navigation/navigation.co
     EmployeeComponent,
     ContractComponent,
     FacilityComponent,
-    NavigationComponent
+    NavigationComponent,
+    AddCustomerComponent,
+    EditCustomerComponent,
+    AddFacilityComponent,
+    EditFacilityComponent
   ],
   imports: [
     BrowserModule,
