@@ -10,6 +10,7 @@ import { CustomerComponent } from './compoment/common/customer/customer.componen
 import { EmployeeComponent } from './compoment/common/employee/employee.component';
 import { ContractComponent } from './compoment/common/contract/contract.component';
 import { FacilityComponent } from './compoment/common/facility/facility.component';
+import { NavigationComponent } from './compoment/common/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FacilityComponent } from './compoment/common/facility/facility.componen
     CustomerComponent,
     EmployeeComponent,
     ContractComponent,
-    FacilityComponent
+    FacilityComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
