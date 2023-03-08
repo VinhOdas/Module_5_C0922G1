@@ -10,14 +10,14 @@ export class ColorPickerComponent implements OnInit {
   red: any = 0;
   green: any = 0;
   blue: any = 0;
-  backGroundColor: any = 'rgb(0,0,0)';
+  color: any = 'rgb(0,0,0)';
 
   constructor() { }
 
   ngOnInit(): void {
   }
   setColor() {
-    this.backGroundColor = 'rgb(' + this.red + ', ' + this.green + ', ' + this.blue + ')';
+    this.color = 'rgb(' + this.red + ', ' + this.green + ', ' + this.blue + ')';
   }
 
 }
