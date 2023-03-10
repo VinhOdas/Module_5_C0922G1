@@ -14,12 +14,12 @@ export class RegisterComponent implements OnInit {
     this.formReactive = new FormGroup(
       {
         email: new FormControl("?", [Validators.required, Validators.email]),
-        password: new FormControl("", [Validators.required]),
-        confirmPassword: new FormControl("", [ Validators.required]),
+        password: new FormControl("", [Validators.required,Validators.minLength(6)]),
+        confirmPassword: new FormControl("", [ Validators.required,Validators.minLength(6)]),
         country: new FormControl("", [Validators.required]),
         age: new FormControl("", [Validators.required,Validators.min(19),Validators.max(100)]),
         gender: new FormControl("", [Validators.required]),
-        phone: new FormControl("", [Validators.required])
+        phone: new FormControl("", [Validators.required,Validators.pattern('^\\+84\\d{9,10}$')])
 
       },
       {validators: this.reConfirmPass}
