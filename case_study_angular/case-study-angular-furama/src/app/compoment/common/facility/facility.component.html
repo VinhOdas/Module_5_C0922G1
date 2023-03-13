@@ -35,8 +35,8 @@
         <td>{{item.poolArea}}</td>
         <td>{{item.numberOfFloors}}</td>
         <td>{{item.facilityFree}}</td>
-        <td>{{item.rentType.name}}</td>
-        <td>{{item.facilityType.name}}</td>
+        <td *ngIf="item.rentType">{{item.rentType?.name}}</td>
+        <td *ngIf="item.facilityType">{{item.facilityType?.name}}</td>
         <td></td>
         <td></td>
       </tr>
@@ -46,54 +46,6 @@
   </div>
   <div class="row">
 
-<!--    <div class="col-md-4" style="text-align: center"  >-->
-<!--      <div class="card" style="width: 35rem;">-->
-<!--        <img src="../../../../assets/images/giuong_khach_san_1.jpg" class="card-img-top" alt="...">-->
-<!--        <div class="card-body">-->
-<!--          <h5 class="card-title" style="font-size: 30px;color: #046056"></h5>-->
-<!--          <hr>-->
-<!--          <ul>-->
-<!--            <li style="color: red; ">STT: </li>-->
-<!--            <hr>-->
-<!--            <li>Name: </li>-->
-<!--            <hr>-->
-<!--            <li>Area: </li>-->
-<!--            <hr>-->
-<!--            <li>Cost: </li>-->
-<!--            <hr>-->
-<!--            <li>Max People:</li>-->
-<!--            <hr>-->
-<!--            <li>Standard Room:</li>-->
-
-<!--            <li id="xemthemcard"><button >Xem thêm</button></li>-->
-
-<!--            <div id="phanxemthem" style="display: none">-->
-<!--              <hr>-->
-<!--              <li>Description Other Convenience </li>-->
-<!--              <hr>-->
-<!--              <li>Pool Area:</li>-->
-<!--              <hr>-->
-<!--              <li>Floors:</li>-->
-<!--              <hr>-->
-<!--              <li>Facility Free:</li>-->
-<!--              <hr>-->
-<!--              <li>Rent Type: </li>-->
-<!--              <hr>-->
-<!--              <li>Facility Type:</li>-->
-<!--            </div>-->
-
-<!--            <li  style="display: none"><button >Thu gọn</button></li>-->
-<!--            &lt;!&ndash;            <div id="phanthugon{{item.id}}" style="display: block">&ndash;&gt;-->
-<!--            &lt;!&ndash;            </div>&ndash;&gt;-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="card-body">-->
-<!--        <button class="btn btn-dark"><a href="#" class="card-link">Update</a></button>-->
-
-<!--        <button style="margin-left: 25px" class="btn btn-danger"><a href="#" class="card-link">Delete</a></button>-->
-<!--      </div>-->
-<!--    </div>-->
 
   </div>
 

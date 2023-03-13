@@ -47,11 +47,7 @@ export class AddCustomerComponent implements OnInit {
     }
   )
   }
-  // private getAll(){
-  //   this.customerService.getAll().subscribe(data =>{
-  //     this.customers = data
-  //   })
-  // }
+
 
   private getAllCustomerTypes(){
     this.customerTypeService.getAllCustomerType().subscribe(data2 =>{

@@ -14,9 +14,7 @@ export class CustomerService {
   }
 
   getAll():Observable<Customer[]> {
-
-    // @ts-ignore
-    return this.httpClient.get(this.HTTP_CUSTOMER);
+    return this.httpClient.get<Customer[]>(this.HTTP_CUSTOMER);
 
   }
 
