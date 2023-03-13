@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-add-contract',
@@ -6,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-contract.component.css']
 })
 export class AddContractComponent implements OnInit {
+    formAddReactive: FormGroup
+  constructor() {
+    this.formAddReactive = new FormGroup(
+      {
 
-  constructor() { }
+
+      }
+    )
+
+  }
 
   ngOnInit(): void {
   }

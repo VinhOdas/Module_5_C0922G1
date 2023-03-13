@@ -83,8 +83,131 @@
         "id": 2,
         "name": "Platinum"
       }
+    },
+    {
+      "name": "Huy",
+      "dateOfBirth": "2002-11-11",
+      "gender": "LGBT",
+      "idCard": "24211201346",
+      "phoneNumber": "0901222111",
+      "email": "huy@gmail.com",
+      "address": "Quảng Ninh, Quảng Bình",
+      "id": 7
+    },
+    {
+      "name": "Huy",
+      "dateOfBirth": "2002-11-11",
+      "gender": "LGBT",
+      "idCard": "24211201346",
+      "phoneNumber": "0901222111",
+      "email": "huy@gmail.com",
+      "address": "Quảng Ninh, Quảng Bình",
+      "id": 8
+    },
+    {
+      "name": "Huy111",
+      "dateOfBirth": "2002-11-11",
+      "gender": "1",
+      "idCard": "24211201346",
+      "phoneNumber": "0989888",
+      "email": "sadasd",
+      "address": "sadas",
+      "id": 9
+    },
+    {
+      "name": "Huy ML",
+      "dateOfBirth": "2003-11-11",
+      "gender": "2",
+      "idCard": "24211201346111",
+      "phoneNumber": "3",
+      "email": "huy@gmail.com.vn",
+      "address": "Da Nang",
+      "id": 10
+    },
+    {
+      "name": "Huy ML",
+      "dateOfBirth": "2003-11-11",
+      "gender": "1",
+      "idCard": "24211201346111",
+      "phoneNumber": "3",
+      "email": "huy@gmail.com.vn",
+      "address": "Da Nang",
+      "id": 11
+    },
+    {
+      "name": "Huy ML",
+      "dateOfBirth": "2003-11-11",
+      "gender": "0",
+      "idCard": "24211201346111",
+      "phoneNumber": "3",
+      "email": "huy@gmail.com.vn",
+      "address": "Da Nang",
+      "id": 12
+    },
+    {
+      "name": "Huy ML",
+      "dateOfBirth": "2003-11-11",
+      "gender": "2",
+      "idCard": "24211201346111",
+      "phoneNumber": "3",
+      "email": "huy@gmail.com.vn",
+      "address": "Da Nang",
+      "id": 13
+    },
+    {
+      "name": "lu",
+      "dateOfBirth": "2023-03-04",
+      "gender": "2",
+      "idCard": "24211201346",
+      "phoneNumber": "222",
+      "email": "troioi@gmail.com",
+      "address": "Quang Binh",
+      "id": 14
+    },
+    {
+      "name": "sadasd",
+      "dateOfBirth": "2023-03-02",
+      "gender": "1",
+      "idCard": "24211201346",
+      "phoneNumber": "0989888",
+      "email": "111",
+      "address": "Mars",
+      "id": 15
+    },
+    {
+      "name": "Nam",
+      "dateOfBirth": "2023-03-07",
+      "gender": "0",
+      "idCard": "24211201346",
+      "phoneNumber": "0901222111",
+      "email": "Nam@gmail.com",
+      "address": "Quảng Ninh, Quảng Bình",
+      "id": 16
+    },
+    {
+      "name": "Nam",
+      "dateOfBirth": "2023-03-07",
+      "gender": "1",
+      "idCard": "24211201346",
+      "phoneNumber": "0989888",
+      "email": "asdasd",
+      "address": "Quảng Ninh, Quảng Bình",
+      "id": 17
+    },
+    {
+      "name": "HuyNam",
+      "dateOfBirth": "2023-03-15",
+      "gender": "1",
+      "idCard": "24211201346",
+      "phoneNumber": "0901222111",
+      "email": "sadsadsa",
+      "address": "Quảng Ninh, Quảng Bình",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "id": 18
     }
-
   ],
   "customerTypes": [
     {
