@@ -26,14 +26,14 @@
     </tr>
 
     </thead>
-    <tbody align="center" >
-    <tr >
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+    <tbody align="center" *ngIf="contractList" >
+    <tr *ngFor="let item of contractList">
+      <td>{{item.id}}</td>
+      <td>{{item.facility?.name}}</td>
+      <td>{{item.customer?.name}}</td>
+      <td>{{item.startDate}}</td>
+      <td>{{item.endDate}}</td>
+      <td>{{item.deposit}}</td>
       <td></td>
     </tr>
     </tbody>

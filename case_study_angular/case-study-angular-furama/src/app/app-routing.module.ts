@@ -4,6 +4,7 @@ import {CustomerComponent} from "./compoment/common/customer/customer.component"
 import {HomeComponent} from "./compoment/common/home/home.component";
 import {FacilityComponent} from "./compoment/common/facility/facility.component";
 import {AddCustomerComponent} from "./compoment/common/customer/add-customer/add-customer.component";
+import {ContractComponent} from "./compoment/common/contract/contract.component";
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
   {
     path: 'facility/list', component:FacilityComponent
   },
+  {
+    path: 'contract/list', component:ContractComponent
+  }
 
 ];
 
