@@ -22,10 +22,10 @@ export class FacilityComponent implements OnInit {
               private router: Router) {
       this.facilityService.getAll().subscribe(data =>{
         this.facilityList = data
-      })
+      }),
     this.facilityTypeService.getAll().subscribe(data1 =>{
       this.facilityType = data1
-    })
+    }),
     this.rentTypeService.getAll().subscribe(data2 =>{
       this.rentType = data2;
     })

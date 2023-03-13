@@ -91,14 +91,14 @@
     "area": 5,
     "cost": 500000,
     "maxPeople": 4,
-    "facilityType": [{
+    "facilityType": {
       "id": 1,
       "name": "villa"
-    }],
-    "rentType": [{
+    },
+    "rentType": {
       "id": 1,
       "name": "year"
-    }],
+    },
     "standardRoom": "vip",
     "descriptionOtherCovenience": "Có hồ bơi",
     "poolArea": 5,
