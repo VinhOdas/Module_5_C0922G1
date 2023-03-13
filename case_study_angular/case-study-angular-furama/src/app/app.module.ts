@@ -16,6 +16,8 @@ import { EditCustomerComponent } from './compoment/common/customer/edit-customer
 import { AddFacilityComponent } from './compoment/common/facility/add-facility/add-facility.component';
 import { EditFacilityComponent } from './compoment/common/facility/edit-facility/edit-facility.component';
 import { AddContractComponent } from './compoment/common/contract/add-contract/add-contract.component';
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -36,7 +38,10 @@ import { AddContractComponent } from './compoment/common/contract/add-contract/a
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
