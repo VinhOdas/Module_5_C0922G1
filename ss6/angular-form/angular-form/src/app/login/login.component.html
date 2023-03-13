@@ -9,19 +9,20 @@
           <strong id="inDam"><h1 class="card-title" style="color: red">Login</h1></strong>
         </div>
         <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
-          <form [formGroup]="formReactive" >
+          <form [formGroup]="formLoginReactive" >
 
             <div class="form-group">
               <label for="">Email</label>
               <input type="email" class="form-control" formControlName="email" id="" aria-describedby="emailHelpId" placeholder="">
-              <span style="color: red" *ngIf="formReactive.controls.email.hasError('required')">  không được để trống</span>
-              <span style="color: red" *ngIf="formReactive.controls.email.hasError('email')">không đúng định dạng</span>
+              <span style="color: red" *ngIf="formLoginReactive.controls.email.hasError('required')">  không được để trống</span>
+              <span style="color: red" *ngIf="formLoginReactive.controls.email.hasError('email')">không đúng định dạng</span>
             </div>
 
             <div class="form-group">
               <label for="">Password</label>
               <input type="password" class="form-control" formControlName="password" id="password" placeholder="">
-              <span style="color: red" *ngIf="formReactive.controls.password.hasError('required')">  không được để trống</span>
+              <span style="color: red" *ngIf="formLoginReactive.controls.password.hasError('required')">  không được để trống</span>
+              <span style="color: red" *ngIf="formLoginReactive.controls.password.hasError('minlength')">  min length 6 </span>
 
             </div>
 

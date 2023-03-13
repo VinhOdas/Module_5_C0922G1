@@ -8,10 +8,10 @@ import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/form
 })
 export class RegisterComponent implements OnInit {
 
-  formReactive: FormGroup  ;
+  formRegisterReactive: FormGroup  ;
 
   constructor() {
-    this.formReactive = new FormGroup(
+    this.formRegisterReactive = new FormGroup(
       {
         email: new FormControl("?", [Validators.required, Validators.email]),
         password: new FormControl("", [Validators.required,Validators.minLength(6)]),

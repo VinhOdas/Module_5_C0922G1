@@ -9,20 +9,20 @@
           <strong id="inDam"><h1 class="card-title" style="color: red">Register</h1></strong>
         </div>
         <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
-          <form [formGroup]="formReactive" >
+          <form [formGroup]="formRegisterReactive" >
 
             <div class="form-group">
               <label for="">Email</label>
               <input type="email" class="form-control" formControlName="email" id="" aria-describedby="emailHelpId" placeholder="">
-              <span style="color: red" *ngIf="formReactive.controls.email.hasError('required')">  không được để trống</span>
-              <span style="color: red" *ngIf="formReactive.controls.email.hasError('email')">không đúng định dạng</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.email.hasError('required')">  không được để trống</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.email.hasError('email')">không đúng định dạng</span>
             </div>
 
             <div class="form-group">
               <label for="">Password</label>
               <input type="password" class="form-control" formControlName="password" id="password" placeholder="">
-              <span style="color: red" *ngIf="formReactive.controls.password.hasError('required')">  không được để trống</span>
-              <span style="color: red" *ngIf="formReactive.controls.password.hasError('minlength')">  min length 6 </span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.password.hasError('required')">  không được để trống</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.password.hasError('minlength')">  min length 6 </span>
 
 
             </div>
@@ -30,9 +30,9 @@
             <div class="form-group">
               <label for="">Confirm Password</label>
               <input type="password" class="form-control" formControlName="confirmPassword" id="confirmPassword" placeholder="">
-              <span style="color: red" *ngIf="formReactive.controls.confirmPassword.hasError('required')">  không được để trống</span>
-              <span style="color: red" *ngIf="formReactive.controls.confirmPassword.hasError('minlength')">  min length 6 </span><br>
-              <span style="color: red" *ngIf="formReactive.controls.confirmPassword.touched && formReactive.hasError('notSame') " >  không dung password</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.confirmPassword.hasError('required')">  không được để trống</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.confirmPassword.hasError('minlength')">  min length 6 </span><br>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.confirmPassword.touched && formRegisterReactive.hasError('notSame') " >  không dung password</span>
 
             </div>
 
@@ -43,15 +43,15 @@
                 <option value="Quang Binh">Quang Binh</option>
               </select>
               </label>
-              <span style="color: red" *ngIf="formReactive.controls.country.hasError('required')">  không được để trống</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.country.hasError('required')">  không được để trống</span>
             </div>
 
             <div class="form-group">
               <label for="">age</label>
               <input type="number" class="form-control" id="age" formControlName="age" aria-describedby="helpId" placeholder="">
-              <span style="color: red" *ngIf="formReactive.controls.age.hasError('required')">  không được để trống</span>
-              <span style="color: red" *ngIf="formReactive.controls.age.hasError('min')">  min 19</span>
-              <span style="color: red" *ngIf="formReactive.controls.age.hasError('max')">  max 100</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.age.hasError('required')">  không được để trống</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.age.hasError('min')">  min 19</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.age.hasError('max')">  max 100</span>
 
             </div>
             <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
@@ -61,7 +61,7 @@
                 <input  style="margin-left: 10%" type="radio" formControlName="gender" value="1" >Nữ
                 <input style="margin-left: 10%" type="radio" formControlName="gender" value="2" >LGBT
                 <br>
-                <span style="color: red" *ngIf="formReactive.controls.gender.hasError('required')">  không được để trống</span>
+                <span style="color: red" *ngIf="formRegisterReactive.controls.gender.hasError('required')">  không được để trống</span>
 
               </div>
 
@@ -69,8 +69,8 @@
             <div class="form-group">
               <label for="">Phone Number</label>
               <input type="text" class="form-control" formControlName="phone" id="phone" aria-describedby="helpId" placeholder="">
-              <span style="color: red" *ngIf="formReactive.controls.phone.hasError('required')">  không được để trống</span>
-              <span style="color: red" *ngIf="formReactive.controls.phone.hasError('pattern')">  dung dinh dang</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.phone.hasError('required')">  không được để trống</span>
+              <span style="color: red" *ngIf="formRegisterReactive.controls.phone.hasError('pattern')">  dung dinh dang</span>
 
             </div>
 
