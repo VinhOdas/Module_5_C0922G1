@@ -1,0 +1,103 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Cafe",
+      "dateOfBirth": "17-11-1999",
+      "gender": 1,
+      "idCard": "2232323",
+      "phoneNumber": "0799061071",
+      "email": "gamquangvinh@gmail.com",
+      "address": "Quang Binh",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "name": "k",
+      "dateOfBirth": "",
+      "gender": "",
+      "idCard": "k",
+      "phoneNumber": "0989888",
+      "email": "k",
+      "address": "k",
+      "id": 2,
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "name": "sadasd",
+      "dateOfBirth": "",
+      "gender": "",
+      "idCard": "sad",
+      "phoneNumber": "s",
+      "email": "s",
+      "address": "s",
+      "id": 3,
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "name": "sadasd",
+      "dateOfBirth": "",
+      "gender": "",
+      "idCard": "sad",
+      "phoneNumber": "s",
+      "email": "s",
+      "address": "s",
+      "id": 4,
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "name": "sad",
+      "dateOfBirth": "",
+      "gender": "",
+      "idCard": "333",
+      "phoneNumber": "3",
+      "email": "3",
+      "address": "3",
+      "id": 5,
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "name": "sadasd",
+      "dateOfBirth": "2023-01-03",
+      "gender": "",
+      "idCard": "222",
+      "phoneNumber": "222",
+      "email": "22",
+      "address": "222",
+      "id": 6,
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    }
+
+  ],
+  "customerTypes": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    }
+  ]
+}

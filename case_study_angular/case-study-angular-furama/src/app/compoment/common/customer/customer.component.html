@@ -7,7 +7,7 @@
 <button routerLink="/customer/create">Create Customer</button>
 <form >
 
-  <table style="color: #363636"  class="table " border="1" >
+  <table style="color: #363636"  class="table "  >
     <thead>
     <tr>
       <th>STT</th>
@@ -23,17 +23,18 @@
       <th>Delete</th>
     </tr>
     </thead>
-    <tbody  align="center">
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+    <tbody   *ngIf="customerList">
+    <tr *ngFor="let item of customerList">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.dateOfBirth}}</td>
+      <td *ngIf="item.gender == 1">Nam</td>
+      <td *ngIf="item.gender == 0">Nữ</td>
+      <td>{{item.idCard}}</td>
+      <td>{{item.phoneNumber}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.address}}</td>
+      <td *ngIf="item.customerType">{{item.customerType?.name}}</td>
       <td></td>
       <td></td>
     </tr>

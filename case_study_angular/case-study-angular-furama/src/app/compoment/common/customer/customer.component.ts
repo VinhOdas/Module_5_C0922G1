@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {Customer} from "../../../model/customer/customer";
+import {CustomerType} from "../../../model/customer/customer-type";
+import {CustomerService} from "../../../service/customer.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-customer',
@@ -7,7 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerComponent implements OnInit {
 
-  constructor() { }
+  customerList: Customer[] = [];
+  customerTypes: CustomerType[]= [];
+
+
+  constructor(private customerService: CustomerService, private router: Router) {
+      this.customerService.getAll().subscribe(data =>
+      {
+          console.log(data)
+        this.customerList = data
+
+      })
+  }
 
   ngOnInit(): void {
   }
