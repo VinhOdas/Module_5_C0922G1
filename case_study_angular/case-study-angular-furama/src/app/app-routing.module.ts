@@ -5,6 +5,7 @@ import {HomeComponent} from "./compoment/common/home/home.component";
 import {FacilityComponent} from "./compoment/common/facility/facility.component";
 import {AddCustomerComponent} from "./compoment/common/customer/add-customer/add-customer.component";
 import {ContractComponent} from "./compoment/common/contract/contract.component";
+import {EditCustomerComponent} from "./compoment/common/customer/edit-customer/edit-customer.component";
 
 const routes: Routes = [
   {
@@ -14,6 +15,9 @@ const routes: Routes = [
   },
   {
     path: 'customer/add', component: AddCustomerComponent
+  },
+  {
+    path: 'customer/edit/:id', component: EditCustomerComponent
   },
   {
     path: 'facility/list', component:FacilityComponent

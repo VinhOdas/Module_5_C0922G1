@@ -13,7 +13,7 @@
         <div class="card-header">
           <strong id="inDam"><h1 class="card-title" style="color: red">Edit Customer</h1></strong>
         </div>
-        <form  >
+        <form *ngIf="customerEdit" [formGroup]="formEditCustomer" (ngSubmit)="submit()" >
           <div class="card-body">
             <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
 
@@ -23,6 +23,7 @@
                   <input type="text" class="form-control phone-number-mask" placeholder="Input Name" id="name_customer"
                          formControlName="name" >
                 </div>
+                <span style="color: red" *ngIf="formEditCustomer.controls.name.hasError('required')">  không được để trống</span>
 
               </div>
 
@@ -30,19 +31,20 @@
               <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
                 <label class="form-label" for="dateOfBirth">Date Of Birth :</label>
                 <input type="date" class="form-control date-mask" placeholder="birth Day" id="dateOfBirth">
+                <span style="color: red" *ngIf="formEditCustomer.controls.dateOfBirth.hasError('required')">  không được để trống</span>
+
               </div>
 
 
-              <div class="mb-2">
-                <label class="form-label">Gender</label>
-                <div class="form-check my-50">
-                  <input type="radio" id="validationRadio3" name="validationRadioBootstrap" class="form-check-input" required="?">
-                  <label class="form-check-label" for="validationRadio3">Male</label>
-                </div>
-                <div class="form-check" >
-                  <input type="radio" id="validationRadio4" name="validationRadioBootstrap" class="form-check-input" required="">
-                  <label class="form-check-label" for="validationRadio4">Female</label>
-                </div>
+              <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
+                <label class="form-label" for="gender">gender :</label>
+                <select class="form-control" formControlName="gender" id="gender">
+                  <option [value]="0">Nam</option>
+                  <option [value]="1">Nu</option>
+                  <option [value]="2">LGBT</option>
+                </select>
+                <span style="color: red"
+                      *ngIf="formEditCustomer.controls.gender.hasError('required')">  không được để trống</span>
               </div>
 
 
@@ -51,7 +53,8 @@
                 <label class="form-label" for="idCard">Id Card :</label>
                 <input type="text" class="form-control numeral-mask" placeholder="Id Card :" id="idCard"
                        formControlName="idCard">
-
+                <span style="color: red"
+                      *ngIf="formEditCustomer.controls.idCard.hasError('required')">  không được để trống</span>
               </div>
 
 
@@ -60,7 +63,8 @@
                 <label class="form-label" for="phoneNumber">Phone Number :</label>
                 <input type="text" class="form-control block-mask" placeholder="loại phòng" id="phoneNumber"
                        formControlName="phoneNumber">
-
+                <span style="color: red"
+                      *ngIf="formEditCustomer.controls.phoneNumber.hasError('required')">  không được để trống</span>
               </div>
 
 
@@ -69,6 +73,10 @@
                 <label class="form-label" for="email">Email :</label>
                 <input type="text" class="form-control delimiter-mask" placeholder="" id="email"
                        formControlName="email">
+                <span style="color: red"
+                      *ngIf="formEditCustomer.controls.email.hasError('required')">  không được để trống</span>
+                <span style="color: red"
+                      *ngIf="formEditCustomer.controls.email.hasError('email')">  không dung dinh dang</span>
 
 
               </div>
@@ -77,16 +85,17 @@
               <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
                 <label class="form-label" for="address">Address</label>
                 <input type="text" class="form-control custom-delimiter-mask" placeholder="address" id="address" formControlName="address">
-
+                <span style="color: red"
+                      *ngIf="formEditCustomer.controls.address.hasError('required')">  không được để trống</span>
               </div>
 
 
               <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
                 <label class="form-label" for="customerType">customerType :</label>
-                <select class="form-select" id="customerType">
-                  <option>IT</option>
-                  <option>Blade Runner</option>
-                  <option>Thor Ragnarok</option>
+                <select class="form-select" id="customerType" formControlName="customerType">
+                  <option *ngFor="let item of customerType" [ngValue]="item">
+                    {{item.name}}
+                  </option>
                 </select>
               </div>
 

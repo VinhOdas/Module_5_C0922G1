@@ -23,4 +23,15 @@ export class CustomerService {
     return this.httpClient.post(this.HTTP_CUSTOMER,customer)
 
   }
+
+  findById(number: number):Observable<Customer[]> {
+    return this.httpClient.get<Customer[]>(this.HTTP_CUSTOMER + "/" + number);
+
+  }
+
+  saveEditCustomer(customer: any):Observable<Customer[]> {
+    return  this.httpClient.patch<Customer[]>(this.HTTP_CUSTOMER +'/'+customer.id,customer)
+
+
+  }
 }
