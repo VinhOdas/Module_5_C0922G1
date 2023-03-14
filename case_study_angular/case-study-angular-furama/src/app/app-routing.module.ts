@@ -8,6 +8,7 @@ import {ContractComponent} from "./compoment/common/contract/contract.component"
 import {EditCustomerComponent} from "./compoment/common/customer/edit-customer/edit-customer.component";
 import {AddFacilityComponent} from "./compoment/common/facility/add-facility/add-facility.component";
 import {EditFacilityComponent} from "./compoment/common/facility/edit-facility/edit-facility.component";
+import {AddContractComponent} from "./compoment/common/contract/add-contract/add-contract.component";
 
 const routes: Routes = [
   {
@@ -32,6 +33,9 @@ const routes: Routes = [
   },
   {
     path: 'contract/list', component:ContractComponent
+  },
+  {
+    path: 'contract/add', component:AddContractComponent
   }
 
 ];
