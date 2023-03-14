@@ -6,6 +6,8 @@ import {FacilityComponent} from "./compoment/common/facility/facility.component"
 import {AddCustomerComponent} from "./compoment/common/customer/add-customer/add-customer.component";
 import {ContractComponent} from "./compoment/common/contract/contract.component";
 import {EditCustomerComponent} from "./compoment/common/customer/edit-customer/edit-customer.component";
+import {AddFacilityComponent} from "./compoment/common/facility/add-facility/add-facility.component";
+import {EditFacilityComponent} from "./compoment/common/facility/edit-facility/edit-facility.component";
 
 const routes: Routes = [
   {
@@ -21,6 +23,12 @@ const routes: Routes = [
   },
   {
     path: 'facility/list', component:FacilityComponent
+  },
+  {
+    path: 'facility/add', component:AddFacilityComponent
+  },
+  {
+    path: 'facility/edit/:id', component:EditFacilityComponent
   },
   {
     path: 'contract/list', component:ContractComponent

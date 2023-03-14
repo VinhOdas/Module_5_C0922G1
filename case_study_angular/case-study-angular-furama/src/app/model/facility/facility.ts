@@ -10,7 +10,7 @@ export interface Facility {
   facilityType?: FacilityType;
   rentType?: RentType;
   standardRoom?: string;
-  descriptionOtherCovenience : string;
+  descriptionOtherCovenience? : string;
   poolArea?: number;
   numberOfFloors?: number;
   facilityFree?: string;
