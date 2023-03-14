@@ -15,6 +15,7 @@ export class CustomerComponent implements OnInit {
 
   customerList: Customer[] = [];
   customerTypes: CustomerType[]= [];
+  removeCustomer: Customer = {};
 
   constructor(private customerService: CustomerService,
               private customerTypeService: CustomerTypeService
@@ -35,4 +36,21 @@ export class CustomerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  deleteCustomer() {
+    let temp = this.customerService.delete(this.removeCustomer.id).subscribe(data => {
+      if (temp != null) {
+        alert('Đã xóa thành công');
+        this.ngOnInit()
+      } else {
+        alert('xóa không thành công');
+      }
+      this.router.navigateByUrl('/customer');
+    }, error => {
+
+    }, () => {
+
+    });
+
+
+  }
 }

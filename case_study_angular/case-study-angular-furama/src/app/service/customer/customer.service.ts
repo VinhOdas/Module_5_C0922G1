@@ -36,4 +36,8 @@ export class CustomerService {
 
 
   }
+
+  delete(id: number | undefined) {
+    return this.httpClient.delete<Customer>('http://localhost:3000/customers/' + id);
+  }
 }

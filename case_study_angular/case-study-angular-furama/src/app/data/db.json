@@ -1,34 +1,6 @@
 {
   "customers": [
     {
-      "id": 1,
-      "name": "Cafe",
-      "dateOfBirth": "2023-03-23",
-      "gender": 1,
-      "idCard": "2232323",
-      "phoneNumber": "0799061071",
-      "email": "gamquangvinh@gmail.com",
-      "address": "Quang Binh",
-      "customerType": {
-        "id": 1,
-        "name": "Diamond"
-      }
-    },
-    {
-      "name": "k",
-      "dateOfBirth": "1999",
-      "gender": 0,
-      "idCard": "k",
-      "phoneNumber": "0989888",
-      "email": "gamquangvinh@gmail.com",
-      "address": "k",
-      "id": 2,
-      "customerType": {
-        "id": 2,
-        "name": "Platinum"
-      }
-    },
-    {
       "name": "sadasd",
       "dateOfBirth": "1999",
       "gender": 1,
