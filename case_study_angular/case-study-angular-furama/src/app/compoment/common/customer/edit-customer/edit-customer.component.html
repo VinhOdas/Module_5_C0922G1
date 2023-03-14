@@ -13,7 +13,7 @@
         <div class="card-header">
           <strong id="inDam"><h1 class="card-title" style="color: red">Edit Customer</h1></strong>
         </div>
-        <form *ngIf="customerEdit" [formGroup]="formEditCustomer" (ngSubmit)="submit()" >
+        <form  [formGroup]="formEditCustomer" (ngSubmit)="submitEdit()" >
           <div class="card-body">
             <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
 
@@ -23,28 +23,30 @@
                   <input type="text" class="form-control phone-number-mask" placeholder="Input Name" id="name_customer"
                          formControlName="name" >
                 </div>
-                <span style="color: red" *ngIf="formEditCustomer.controls.name.hasError('required')">  không được để trống</span>
+                <span style="color: red" *ngIf="formEditCustomer.controls.name.hasError('required')">
+                  không được để trống</span>
 
               </div>
 
 
               <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
                 <label class="form-label" for="dateOfBirth">Date Of Birth :</label>
-                <input type="date" class="form-control date-mask" placeholder="birth Day" id="dateOfBirth">
-                <span style="color: red" *ngIf="formEditCustomer.controls.dateOfBirth.hasError('required')">  không được để trống</span>
-
+                <input type="date" class="form-control date-mask" placeholder="birth Day"
+                       id="dateOfBirth" formControlName="dateOfBirth">
+                <span style="color: red" *ngIf="formEditCustomer.controls.dateOfBirth.hasError('required')">
+                  không được để trống</span>
               </div>
 
 
               <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
                 <label class="form-label" for="gender">gender :</label>
                 <select class="form-control" formControlName="gender" id="gender">
-                  <option [value]="0">Nam</option>
-                  <option [value]="1">Nu</option>
-                  <option [value]="2">LGBT</option>
+                  <option value=1>Nam</option>
+                  <option value=0>Nu</option>
+                  <option value=2>LGBT</option>
                 </select>
-                <span style="color: red"
-                      *ngIf="formEditCustomer.controls.gender.hasError('required')">  không được để trống</span>
+                <span style="color: red" *ngIf="formEditCustomer.controls.gender.hasError('required')">
+                  không được để trống</span>
               </div>
 
 
@@ -84,7 +86,8 @@
 
               <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
                 <label class="form-label" for="address">Address</label>
-                <input type="text" class="form-control custom-delimiter-mask" placeholder="address" id="address" formControlName="address">
+                <input type="text" class="form-control custom-delimiter-mask" placeholder="address" id="address"
+                       formControlName="address">
                 <span style="color: red"
                       *ngIf="formEditCustomer.controls.address.hasError('required')">  không được để trống</span>
               </div>
@@ -92,7 +95,7 @@
 
               <div class="col-xl-12 col-md-12 col-sm-12 mb-2">
                 <label class="form-label" for="customerType">customerType :</label>
-                <select class="form-select" id="customerType" formControlName="customerType">
+                <select class="form-select" id="customerType" formControlName="customerType" [compareWith]="compareWith">
                   <option *ngFor="let item of customerType" [ngValue]="item">
                     {{item.name}}
                   </option>
@@ -101,8 +104,9 @@
 
             </div>
             <div class="col-12">
-              <button type="reset" class="btn btn-primary me-1 waves-effect waves-float waves-light">Submit</button>
-              <button type="reset" class="btn btn-outline-secondary waves-effect">Reset</button>
+              <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                      [disabled]="!formEditCustomer.valid">Update
+              </button>
             </div>
           </div>
         </form>

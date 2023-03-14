@@ -25,11 +25,13 @@ export class CustomerService {
   }
 
   findById(number: number):Observable<Customer[]> {
-    return this.httpClient.get<Customer[]>(this.HTTP_CUSTOMER + "/" + number);
+    debugger
+    return this.httpClient.get<Customer[]>(this.HTTP_CUSTOMER + '/' + number);
 
   }
 
-  saveEditCustomer(customer: any):Observable<Customer[]> {
+  saveEditCustomer(id: number | undefined, customer: Customer):Observable<Customer[]> {
+    debugger
     return  this.httpClient.patch<Customer[]>(this.HTTP_CUSTOMER +'/'+customer.id,customer)
 
 

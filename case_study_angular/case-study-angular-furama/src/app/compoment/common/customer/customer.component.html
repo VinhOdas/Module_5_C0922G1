@@ -49,9 +49,10 @@
       <td>{{item.address}}</td>
       <td *ngIf="item.customerType">{{item.customerType?.name}}</td>
       <td><button style="background: darkcyan">
-        <a [routerLink]="['/customer/edit',item.id]">Edit</a>
+        <a routerLink='/customer/edit/{{item.id}}'>Edit</a>
       </button></td>
-<!--      <td><button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="temp = item" >Delete</button></td>-->
+      <td></td>
+<!--      <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="temp = item" >Delete</button>-->
     </tr>
     </tbody>
   </table>

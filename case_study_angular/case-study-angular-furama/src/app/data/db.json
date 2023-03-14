@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Cafe",
-      "dateOfBirth": "17-11-1999",
+      "dateOfBirth": "2023-03-23",
       "gender": 1,
       "idCard": "2232323",
       "phoneNumber": "0799061071",
@@ -16,11 +16,11 @@
     },
     {
       "name": "k",
-      "dateOfBirth": "",
-      "gender": "",
+      "dateOfBirth": "1999",
+      "gender": 0,
       "idCard": "k",
       "phoneNumber": "0989888",
-      "email": "k",
+      "email": "gamquangvinh@gmail.com",
       "address": "k",
       "id": 2,
       "customerType": {
@@ -30,8 +30,8 @@
     },
     {
       "name": "sadasd",
-      "dateOfBirth": "",
-      "gender": "",
+      "dateOfBirth": "1999",
+      "gender": 1,
       "idCard": "sad",
       "phoneNumber": "s",
       "email": "s",
@@ -57,10 +57,11 @@
       "name": "Gold"
     }
   ],
-  "facilityType": [{
-    "id": 1,
-    "name": "villa"
-  },
+  "facilityType": [
+    {
+      "id": 1,
+      "name": "villa"
+    },
     {
       "id": 2,
       "name": "house"
@@ -83,27 +84,28 @@
       "id": 3,
       "name": "day"
     }
-
   ],
-  "facility":[{
-    "id": 1,
-    "name": "Villa Beach Front",
-    "area": 5,
-    "cost": 500000,
-    "maxPeople": 4,
-    "facilityType": {
+  "facility": [
+    {
       "id": 1,
-      "name": "villa"
-    },
-    "rentType": {
-      "id": 1,
-      "name": "year"
-    },
-    "standardRoom": "vip",
-    "descriptionOtherCovenience": "Có hồ bơi",
-    "poolArea": 5,
-    "numberOfFloors": 5,
-    "facilityFree": "co xe dap",
-    "status": 1
-  }]
+      "name": "Villa Beach Front",
+      "area": 5,
+      "cost": 500000,
+      "maxPeople": 4,
+      "facilityType": {
+        "id": 1,
+        "name": "villa"
+      },
+      "rentType": {
+        "id": 1,
+        "name": "year"
+      },
+      "standardRoom": "vip",
+      "descriptionOtherCovenience": "Có hồ bơi",
+      "poolArea": 5,
+      "numberOfFloors": 5,
+      "facilityFree": "co xe dap",
+      "status": 1
+    }
+  ]
 }
