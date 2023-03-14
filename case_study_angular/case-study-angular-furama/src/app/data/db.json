@@ -13,6 +13,48 @@
         "id": 2,
         "name": "Platinum"
       }
+    },
+    {
+      "name": "Cafe666",
+      "dateOfBirth": "2023-02-01",
+      "gender": "2",
+      "idCard": "24211201346",
+      "phoneNumber": "0989888",
+      "email": "6767@gmail.com",
+      "address": "Quang Binh",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "id": 4
+    },
+    {
+      "name": "VInh",
+      "dateOfBirth": "1999-11-17",
+      "gender": "0",
+      "idCard": "044099001879",
+      "phoneNumber": "0799061071",
+      "email": "gamquangvinh@gmail.com",
+      "address": "Quang Binh",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "id": 5
+    },
+    {
+      "name": "Quoc",
+      "dateOfBirth": "1999-11-11",
+      "gender": "0",
+      "idCard": "24211201346",
+      "phoneNumber": "0901222111",
+      "email": "gamquangvinh@gmail.com",
+      "address": "Quang Binh",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "id": 6
     }
   ],
   "customerTypes": [

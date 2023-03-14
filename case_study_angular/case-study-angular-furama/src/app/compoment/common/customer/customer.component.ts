@@ -53,4 +53,21 @@ export class CustomerComponent implements OnInit {
 
 
   }
+
+  search(nameSearch: string, customerTypeSearch: string): void {
+    if (!customerTypeSearch){
+      this.customerService.searchName(nameSearch).subscribe(data =>{
+        this.customerList = data
+      })
+    }
+    else {
+      this.customerService.searchNameAndCustomerType(nameSearch,customerTypeSearch).subscribe(data2 =>{
+        this.customerList = data2
+      })
+
+    }
+
+
+
+  }
 }

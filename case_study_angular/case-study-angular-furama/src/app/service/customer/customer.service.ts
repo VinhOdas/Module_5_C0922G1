@@ -40,4 +40,15 @@ export class CustomerService {
   delete(id: number | undefined) {
     return this.httpClient.delete<Customer>('http://localhost:3000/customers/' + id);
   }
+
+  searchName(nameSearch: string) {
+    return this.httpClient.get<Customer[]>(this.HTTP_CUSTOMER +'?name_like=' + nameSearch);
+
+
+  }
+
+  searchNameAndCustomerType(nameSearch: string, customerTypeSearch: string) {
+    return this.httpClient.get<Customer[]>(this.HTTP_CUSTOMER + '?name_like=' + nameSearch + '&customerType.name=' + customerTypeSearch)
+
+  }
 }

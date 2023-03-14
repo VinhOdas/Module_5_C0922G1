@@ -4,6 +4,22 @@
 <app-header></app-header>
 
 <app-navigation></app-navigation>
+
+<form class="d-flex animationTop delay-02" role="search" style="float: left; font-size: 17px; margin-top: 57px">
+  <div>
+    <input class="form-control me-2" #nameSearch type="search" placeholder="Search By Name" aria-label="Search">
+  </div>
+  <div>
+    <select class="form-select animationTop delay-03" aria-label="Default select example" #customerSearch
+            style="padding-right: 10px">
+      <option selected value="">CustomerType :</option>
+      <option *ngFor="let item of customerTypes" [ngValue]="item">{{item.name}}</option>
+    </select>
+  </div>
+  <button style="margin-left: 10px" class="btn btn-primary animationTop delay-04"
+          (click)="search(nameSearch.value,customerSearch.value)" type="submit">Search
+  </button>
+</form>
 <div>
   <button class="btn btn-primary btn-outline-secondary btn-sm" data-bs-toggle="modal"
           data-bs-target="#addContract">
