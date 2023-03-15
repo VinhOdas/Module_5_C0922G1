@@ -54,7 +54,6 @@ export class AddCustomerComponent implements OnInit {
   }
 
   saveCreateCustomer() {
-    console.log(this.formAddReactice.value);
     this.customerService.saveCreateCustomer(this.formAddReactice.value).subscribe(data => {
         this.router.navigateByUrl('/customer/list')
         this.formAddReactice.reset();

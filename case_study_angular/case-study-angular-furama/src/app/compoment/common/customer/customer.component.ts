@@ -32,7 +32,6 @@ export class CustomerComponent implements OnInit {
   getAll(){
     this.customerService.getAll().subscribe(data =>
     {
-      console.log(data)
       this.customerList = data
 
     })
