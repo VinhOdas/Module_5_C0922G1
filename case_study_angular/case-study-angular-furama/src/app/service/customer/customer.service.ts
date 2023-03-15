@@ -48,7 +48,19 @@ export class CustomerService {
   }
 
   searchNameAndCustomerType(nameSearch: string, customerTypeSearch: string) {
+
     return this.httpClient.get<Customer[]>(this.HTTP_CUSTOMER + '?name_like=' + nameSearch + '&customerType.name=' + customerTypeSearch)
 
   }
+
+  seachNameAndCustomerTypeTwo(name :string, customerType: string):Observable<Customer[]> {
+    debugger
+    return this.httpClient.get<Customer[]>
+
+    (this.HTTP_CUSTOMER + '?name_like=' + name + '&customerType.name_like=' + customerType)
+
+
+  };
+
+
 }
