@@ -19,6 +19,7 @@ export class CustomerComponent implements OnInit {
   searchNameTwoWayBinding= '';
   temp = 1;
   searchCustomerTypes= '';
+  page= 0;
 
   constructor(private customerService: CustomerService,
               private customerTypeService: CustomerTypeService
@@ -62,7 +63,7 @@ export class CustomerComponent implements OnInit {
       } else {
         alert('xóa không thành công');
       }
-      this.router.navigateByUrl('/customer');
+      // this.router.navigateByUrl('/customer');
     }, error => {
 
     }, () => {

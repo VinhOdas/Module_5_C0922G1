@@ -22,7 +22,10 @@
                   <input type="text" class="form-control phone-number-mask" placeholder="Input Name" id="name_customer"
                          formControlName="name">
                 </div>
-                <span style="color: red" *ngIf="formAddReactice.controls.name.hasError('required')">  không được để trống</span>
+                <span style="color: red" *ngIf="formAddReactice.controls.name.hasError('required')">  không được để trống</span><br>
+                <span style="color: red" *ngIf="formAddReactice.controls.name.hasError('pattern')"> không đúng định dạng </span><br>
+                <span style="color: red" *ngIf="formAddReactice.controls.name.hasError('minlength')">ngắn nhât 5 ký tự</span><br>
+                <span style="color: red" *ngIf="formAddReactice.controls.name.hasError('maxlength')">dài nhất 25 ký tự</span><br>
 
               </div>
 
@@ -32,6 +35,8 @@
                 <input type="date" class="form-control date-mask" placeholder="birth Day" id="dateOfBirth"
                        formControlName="dateOfBirth">
                 <span style="color: red" *ngIf="formAddReactice.controls.dateOfBirth.hasError('required')">  không được để trống</span>
+                <span style="color: red" *ngIf="formAddReactice.controls.dateOfBirth.hasError('pattern')"> không đúng định dạng </span><br>
+
               </div>
 
 
@@ -52,8 +57,9 @@
                 <label class="form-label" for="idCard">Id Card :</label>
                 <input type="text" class="form-control numeral-mask" placeholder="Id Card :" id="idCard"
                        formControlName="idCard">
-                <span style="color: red"
-                      *ngIf="formAddReactice.controls.idCard.hasError('required')">  không được để trống</span>
+                <span style="color: red" *ngIf="formAddReactice.controls.idCard.hasError('required')">  không được để trống</span>
+                <span style="color: red" *ngIf="formAddReactice.controls.idCard.hasError('pattern')"> không đúng định dạng </span><br>
+
 
               </div>
 
@@ -62,8 +68,9 @@
                 <label class="form-label" for="phoneNumber">Phone Number :</label>
                 <input type="text" class="form-control block-mask" placeholder="loại phòng" id="phoneNumber"
                        formControlName="phoneNumber">
-                <span style="color: red"
-                      *ngIf="formAddReactice.controls.phoneNumber.hasError('required')">  không được để trống</span>
+                <span style="color: red" *ngIf="formAddReactice.controls.phoneNumber.hasError('required')">  không được để trống</span>
+                <span style="color: red" *ngIf="formAddReactice.controls.phoneNumber.hasError('pattern')"> không đúng định dạng </span><br>
+
               </div>
 
 

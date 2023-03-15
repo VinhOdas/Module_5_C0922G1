@@ -60,7 +60,7 @@
     </tr>
     </thead>
     <tbody  *ngIf="customerList">
-    <tr *ngFor="let item of customerList">
+    <tr *ngFor="let item of customerList  | paginate: { itemsPerPage: 2, currentPage: page }">
       <td>{{item.id}}</td>
       <td>{{item.name}}</td>
       <td>{{item.dateOfBirth}}</td>
@@ -84,6 +84,7 @@
     </tr>
     </tbody>
   </table>
+<pagination-controls (pageChange)="page = $event"></pagination-controls>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
   <div class="modal-dialog">
